@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jared Manuel</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+<div class="header">
+    <div class="container">
+        <nav>
+             <img class="logo" src="logo.png">
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li class="button"><a href="#contact">Contact</a></li>
+                <ion-icon name="close-outline" onclick="closemenu()"></ion-icon>
+            </ul>
+            <ion-icon name="menu-outline" onclick="openmenu()"></ion-icon>
+        </nav>
+        <div class="row">
+            <div class="home-col-1">
+                <div class="header-text">
+                    <p>Aspiring <span class="text"></span></p>
+                    <h1>Hello, my name is Jared 😊</h1>
+                </div>
+            </div>
+            <div class="home-col-2">
+                <img src="user.jpg" class="user-logo">
+            </div>
+        </div>
+    </div>
+</div>
+<!----about section-->
+<div class="about" id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="about.jpg"  class="about-image">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>Hi! I'm a current student at Los Angeles Pierce College on the way to obtaining an associate's degree in computer science and to transfer to CSUN for a bachelor's degree. I'm currently learning web development as a hobby on the side and at college, I'm building my skills in object-oriented programming with an emphasis on C++ and Python. When I'm not coding or learning development, I assist with various schools across southern California with their colorguard program. Check out my work experience and educational journey here!</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>HTML & CSS</span><br>Intermediate static web design</li>
+                        <li><span>C++</span><br>Object-oriented programming</li>
+                        <li><span>Javascript</span><br>Currently learning</li>
+                        <li><span>Barista</span><br>5 years of blending experience</li>
+                        <li><span>Colorguard Coaching</span><br>2 years of marching band & winterguard coaching</li>
+                    </ul>
+                </div>
+                 <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2025 - Current</span><br>Colorguard coach at John F. Kennedy High School</li>
+                        <li><span>2021 - 2025</span><br>Assistant manager at It's Boba Time</li>
+                        <li><span>2023 - 2024</span><br>Colorguard coach at Grover Cleveland Charter High School</li>
+                        <li><span>2024</span><br>Colorguard coach at El Camino Real Charter High School</li>
+                    </ul>
+                </div>
+                 <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2024 - Current</span><br>Los Angeles Pierce College - Computer Science<br>Woodland Hills, CA</li>
+                        <li><span>2017 - 2021</span><br>Granada Hills Charter High School<br>Granada Hills, CA</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<div class="contact" id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><ion-icon name="mail-outline"></ion-icon>jareddm.105@gmail.com</p>
+                <p><ion-icon name="call-outline"></ion-icon>+1 (818) 203-6166</p>
+                <div class="social-icons">
+                    <a target="_blank" href="https://linkedin.com/in/jared-manuel-29820434a"><ion-icon name="logo-linkedin"></ion-icon></i></a>
+                    <a target="_blank" href="https://www.facebook.com/JaredManuel03"><ion-icon name="logo-facebook"></ion-icon></i></a>
+                </div>  
+                <a href="JaredAllan_Manuel.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+<script>
+    var typed = new Typed('.text', {
+        strings: ['Web Designer', 'Barista', 'Coach'],
+        typeSpeed: 100,
+        backSpeed: 80,
+        backDelay: 1500,
+        loop: true
+    });
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname) {
+        for(tablink of tablinks) {
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents) {
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+    var sidemenu = document.getElementById("sidemenu");
+    function openmenu() {
+        sidemenu.style.right = "0";
+    }
+        function closemenu() {
+        sidemenu.style.right = "-200px";
+    }
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbysF8Ugdd1hKvH8QMSHtk66Bgq0uYnHgOyJCOpqB7cfqILA7QyI7ZrFKLuKcyHIa_WxjA/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg");
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function() {
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+</script>
+</body>
+</html>

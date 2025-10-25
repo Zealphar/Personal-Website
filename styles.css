@@ -1,0 +1,375 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', 'sans-serif';
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #080808;
+    color: white;
+    padding-bottom: 50px;
+}
+
+.header {
+    width: 100%;
+    height: 100vh;
+}
+
+.about {
+    width: 100%;
+    height: 100vh;
+    color: #ababab;
+    padding: 150px 0;
+}
+
+.container {
+    padding: 10px 10%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo {
+    display: inline;
+    width: 12%;
+}
+
+nav ul li {
+    display: inline-block;
+    list-style: none;
+    margin: 10px 20px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    position: relative;
+}
+
+.button {
+    padding: 12px 15px;
+    background-color: #3b86eff2;
+    cursor: pointer;
+    border: none;
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: #71acfff2;
+    transition: 0.3s all ease;
+}
+
+/*to prevent the underline effect*/
+.button a:hover::after {
+    content: none;
+}
+
+nav ul li a::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #3b86eff2;
+    position: absolute;
+    left: 0;
+    bottom: -6px;
+}
+
+nav ul li a:hover::after {
+    width: 100%;
+    transition: 0.5s;
+}
+
+.header-text {
+    margin-top: 20%;
+    font-size: 30px;
+}
+
+.header-text h1 {
+    font-size: 60px;
+    margin-top: 20px;
+}
+
+.row {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.text {
+    color: #8ebdfff2;
+}
+
+.user-logo {
+    border-radius: 100%;
+    width: 90%;
+    box-shadow:
+        0 0 30px 15px rgba(0, 170, 255, 0.8), 
+        0 0 10px 5px rgba(255, 255, 255, 0.9);
+}
+
+.user-logo:hover {
+    box-shadow: 
+        0 0 40px 20px rgba(0, 170, 255, 1.0),
+        0 0 15px 10px rgba(255, 255, 255, 1.0);
+    transform: scale(1.02); 
+    transition: 0.5s ease all;
+    cursor: pointer;
+}
+
+.header .row {
+    margin-top: 250px;
+}
+
+
+.about-col-1 {
+    flex-basis: 35%;
+}
+
+.about-col-1 img {
+    width: 90%;
+    border-radius: 15px;
+}
+.about-col-2 {
+    flex-basis: 60%;
+}
+
+.about-col-2 h1 {
+    margin-bottom: 20px;
+}
+.about-col-2 p {
+    font-size: 20px;
+    margin-bottom: 10px;
+    line-height: 1.3;
+}
+
+.sub-title {
+    font-size: 60px;
+    font-weight: 600;
+    color: white;
+}
+
+.tab-titles {
+    display: flex;
+    margin: 20px 0 40px;
+}
+
+.tab-links {
+    margin-right: 50px;
+    font-size: 25px;
+    font-weight: 500;
+    cursor: pointer;
+    position: relative;
+}
+
+.tab-links::after {
+    content: '';
+    width: 0;
+    height: 3px;
+    background: #3b86eff2;
+    position: absolute;
+    left: 0;
+    bottom: -8px;
+}
+
+.tab-links.active-link::after {
+    width: 70%;
+    transition: 0.3s all ease;
+}
+
+.tab-contents ul li {
+    list-style: none;
+    margin: 15px 0;
+}
+
+.tab-contents ul li span {
+    color: rgb(58, 181, 238);
+    font-size: 15px;
+    line-height: 2;
+}
+
+.tab-contents {
+    display: none;
+}
+
+.tab-contents.active-tab {
+    display: block;
+}
+
+.contact-left {
+    flex-basis: 30%;
+    
+}
+
+.contact-right {
+    flex-basis: 60%;
+} 
+
+.contact-left p {
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+.contact-left p ion-icon {
+    color: #058ac3;
+    margin-right: 15px;
+    font-size: 25px;
+}
+
+.social-icons {
+    margin-top: 30px;
+}
+
+.social-icons a {
+    text-decoration: none;
+    font-size: 30px;
+    margin-right: 15px;
+    color: #ababab;
+    display: inline-block;
+    transition: transform 0.3s;
+}
+
+.social-icons a:hover {
+    color: #058ac3;
+    transform: translateY(-5px);
+}
+
+.btn.btn2 {
+    display: inline-block;
+    background: #058ac3;
+    color: #fff;
+    margin: 50px auto;
+    width: fit-content;
+    border: 1px solid #058ac3;
+    border-radius: 6px;
+    margin-top: 50px;
+    padding: 20px 60px;
+    text-decoration: none;
+    font-size: 22px;
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.btn.btn2:hover {
+    background: black;
+}
+
+form input, form textarea {
+    width: 100%;
+    border: 0;
+    outline: none;
+    background: #262626;
+    padding: 15px;
+    margin: 15px 0;
+    color: white;
+    font-size: 18px;
+    border-radius: 6px;
+}
+
+form btn2 {
+    padding: 14px 60px;
+    font-size: 18px;
+    margin-top: 20px;
+    cursor: pointer;
+}
+#msg {
+    color: #61b752;
+    margin-top: -20px;
+    display: block;
+    font-size: 20px;
+}
+
+/*------css responsiveness-----*/
+nav ion-icon {
+    display: none;
+}
+@media only screen and (max-width: 600px) {
+    .header-text {
+        margin-top: 10%;
+        font-size: 30px;
+    }
+    .user-logo {
+        margin-top: 50px;
+        width: 70%;
+         box-shadow:
+        0 0 10px 5px rgba(0, 170, 255, 0.8), 
+        0 0 3px 1px rgba(255, 255, 255, 0.9);
+    }
+    .user-logo:hover {
+    box-shadow: 
+        0 0 15px 7px rgba(0, 170, 255, 1.0),
+        0 0 5px 3px rgba(255, 255, 255, 1.0);
+    }
+    .header-text h1 {
+        font-size: 30px;
+    }
+    nav ion-icon {
+    display: block;
+    font-size: 25px;
+    }
+
+    .logo {
+        width: 50%;
+    }
+
+    nav ul {
+        background: #058ac3;
+        position: fixed;
+        top: 0;
+        right: -200px;
+        width: 200px;
+        height: 100vh;
+        padding-top: 50px;
+        z-index: 2;
+        transition: 0.3s;
+    }
+    nav ul li {
+        display: block;
+        margin: 25px;
+    }
+    .button {
+        display: inline;
+        padding: 0;
+        outline: none;
+        border: none;
+        color: white;
+        background-color: #058ac3;
+    }
+    nav ul ion-icon {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title {
+        font-size: 40px;
+    }
+    .about-col-1, .about-col-2 {
+        flex-basis: 100%;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    .about-col-2 {
+        font-size: 14px;
+    }
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .tab-titles p {
+        margin-top: 15px;
+    }
+    .contact {
+        margin-top: 200%;
+    }
+    .contact-left, .contact-right {
+        flex-basis: 100%;
+    }
+}
