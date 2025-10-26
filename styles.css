@@ -291,12 +291,12 @@ nav ion-icon {
 }
 @media only screen and (max-width: 600px) {
     .header-text {
-        margin-top: 10%;
+        margin-top: 5%;
         font-size: 30px;
     }
     .user-logo {
-        margin-top: 50px;
-        width: 70%;
+        display: inline-block;
+        width: 90%;
          box-shadow:
         0 0 10px 5px rgba(0, 170, 255, 0.8), 
         0 0 3px 1px rgba(255, 255, 255, 0.9);
@@ -307,8 +307,12 @@ nav ion-icon {
         0 0 5px 3px rgba(255, 255, 255, 1.0);
     }
     .header-text h1 {
-        font-size: 30px;
+        font-size: 25px;
     }
+    
+     .header-text p {
+        font-size: 25px;
+     }
     nav ion-icon {
     display: block;
     font-size: 25px;
@@ -372,4 +376,67 @@ nav ion-icon {
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
+
+    .contact-left p {
+        font-size: 17px;
+     }
+    .btn.btn2 {
+        font-size: 17px;
+    }
+}
+
+/*to fix macbook and ipad*/
+@media only screen and (max-width: 1280px) {
+    .header-text {
+        font-size: 30px;
+    }
+    .user-logo {
+       width: 36%;
+         box-shadow:
+        0 0 10px 5px rgba(0, 170, 255, 0.8), 
+        0 0 3px 1px rgba(255, 255, 255, 0.9);
+    }
+    .user-logo:hover {
+    box-shadow: 
+        0 0 15px 7px rgba(0, 170, 255, 1.0),
+        0 0 5px 3px rgba(255, 255, 255, 1.0);
+    }
+    .header-text h1 {
+        font-size: 40px;
+        margin-bottom: 70px;
+    }
+
+
+    nav ul ion-icon {
+        position: absolute;
+        top: 25px;
+        left: 25px;
+        cursor: pointer;
+    }
+    .sub-title {
+        font-size: 35px;
+    }
+    .about-col-1 {
+        margin-bottom: 30px;
+    }
+    .about-col-2 {
+        font-size: 14px;
+    }
+    .about-col-2 p {
+        font-size: 16px;
+    }
+    .tab-links {
+        font-size: 16px;
+        margin-right: 20px;
+    }
+    .tab-titles p {
+        margin-top: 15px;
+    }
+    .contact-left p {
+        font-size: 17px;
+    }
+    .btn.btn2 {
+        font-size: 17px;
+    }
+
 }
