@@ -1,3 +1,4 @@
+
 * {
     box-sizing: border-box;
     margin: 0;
@@ -332,8 +333,8 @@ nav ion-icon {
         font-size: 25px;
      }
     nav ion-icon {
-    display: block;
-    font-size: 25px;
+        display: block;
+        font-size: 25px;
     }
 
     .logo {
@@ -394,9 +395,26 @@ nav ion-icon {
     .contact-left, .contact-right {
         flex-basis: 100%;
     }
+    .home-col-2 {
+        margin-top: 20px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-basis: 70%;
+    }
 
     .contact-left p {
         font-size: 17px;
+     }
+     .about-col-2 p {
+        font-size: 20px;
+     }
+     .sub-title {
+        font-size: 30px;
+     }
+
+     .contact {
+        padding-top: 70%;
      }
     .btn.btn2 {
         font-size: 17px;
@@ -487,5 +505,9 @@ nav ion-icon {
     }
     .contact-left p {
         font-size: 13px;
+    }
+    .sub-title {
+        font-size: 35px;
+        margin-top: 20px;
     }
 }
