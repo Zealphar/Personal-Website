@@ -105,10 +105,15 @@ nav ul li a:hover::after {
 .text {
     color: #8ebdfff2;
 }
-
+.home-col-2 {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
 .user-logo {
     border-radius: 100%;
-    width: 90%;
+    display: inline;
+    width: 60%;
     box-shadow:
         0 0 30px 15px rgba(0, 170, 255, 0.8), 
         0 0 10px 5px rgba(255, 255, 255, 0.9);
@@ -399,7 +404,7 @@ nav ion-icon {
         font-size: 30px;
     }
     .user-logo {
-       width: 36%;
+         width: 30%;
          box-shadow:
         0 0 10px 5px rgba(0, 170, 255, 0.8), 
         0 0 3px 1px rgba(255, 255, 255, 0.9);
@@ -447,4 +452,22 @@ nav ion-icon {
         font-size: 17px;
     }
 
+}
+
+@media only screen and (min-height: 900px) {
+    .home-col-2 .user-logo {
+        width: 70%;
+    }
+    .about-col-2 p {
+        font-size: 20px;
+    }
+    .about-col-2 span {
+        font-size: 17px;
+    }
+    .btn.btn2 {
+        padding: 20px 40px;
+    }
+    .contact {
+        margin-top: 70px;
+    }
 }
