@@ -110,7 +110,6 @@ nav ul li a:hover::after {
     display: flex;
     justify-content: space-around;
     align-items: center;
-    background-color: red;
     flex-basis: 40%;
 }
 .home-col-2 .user-logo {
@@ -460,7 +459,6 @@ nav ion-icon {
 }
 @media only screen and (min-width: 768px) and (max-width: 1030px) and (orientation: portrait) {
     .home-col-2 {
-        background-color: green;
         flex-basis: 80%;
         width: 100%;
     }
