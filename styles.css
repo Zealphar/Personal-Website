@@ -401,7 +401,7 @@ nav ion-icon {
 }
 
 /*to fix macbook and ipad*/
-@media only screen and (max-width: 1280px) {
+@media only screen and (min-width: 1030px) and (max-width: 12500px) {
     .header-text {
         font-size: 30px;
     }
@@ -421,10 +421,8 @@ nav ion-icon {
         margin-bottom: 70px;
     }
     .home-col-2 .user-logo{
-        flex-basis: 70%;
+        flex-basis: 80%;
     }
-
-
 
     nav ul ion-icon {
         position: absolute;
