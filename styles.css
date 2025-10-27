@@ -113,7 +113,7 @@ nav ul li a:hover::after {
 .user-logo {
     border-radius: 100%;
     display: inline;
-    width: 60%;
+    width: 40%;
     box-shadow:
         0 0 30px 15px rgba(0, 170, 255, 0.8), 
         0 0 10px 5px rgba(255, 255, 255, 0.9);
