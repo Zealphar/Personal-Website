@@ -294,9 +294,17 @@ nav ion-icon {
         margin-top: 5%;
         font-size: 30px;
     }
-    .user-logo {
-        display: inline-block;
-        width: 90%;
+    .home-col-2 {
+        height: 300px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: -50px;
+    }
+    .home-col-2 .user-logo {
+        display: inline;
+        width: 80%;
+        height: auto;
          box-shadow:
         0 0 10px 5px rgba(0, 170, 255, 0.8), 
         0 0 3px 1px rgba(255, 255, 255, 0.9);
@@ -319,7 +327,7 @@ nav ion-icon {
     }
 
     .logo {
-        width: 50%;
+        width: 45%;
     }
 
     nav ul {
