@@ -479,8 +479,10 @@ nav ion-icon {
 }
 @media only screen and (min-width: 768px) and (max-width: 1030px) and (orientation: portrait) {
     .home-col-2 {
-        flex-basis: 80%;
-        width: 100%;
+        flex-basis: 60%;
+    }
+    .home-col-2 img {
+        margin-top: 60px;
     }
    .header {
     margin-bottom: 0;
@@ -498,7 +500,7 @@ nav ion-icon {
         margin-bottom: 100%;
     }
     .contact {
-        margin-top: 70%;
+        margin-top: 1000px;
     }
     .btn.btn2 {
         padding: 20px 30px;
@@ -509,5 +511,13 @@ nav ion-icon {
     .sub-title {
         font-size: 35px;
         margin-top: 20px;
+    }
+}
+@media only screen and (max-width: 380px) and (max-height: 840px) {
+    .home-col-2 {
+        flex-basis: 80%;
+    }
+    .contact {
+        margin-top: 300%;
     }
 }
