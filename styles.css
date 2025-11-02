@@ -521,3 +521,21 @@ nav ion-icon {
         margin-top: 300%;
     }
 }
+@media only screen and (min-width: 1280px) and (max-height: 840px) and (orientation: landscape) {
+    .home-col-2 {
+        flex-basis: 35%;
+    }
+    .home-col-2 img {
+        margin: 15%;
+    }
+    .about p, .about ul li {
+        font-size: 17px;
+    }
+ 
+    .about {
+        margin-top: 10%;
+    }
+    .contact {
+        margin-top: 15%;
+    }
+}
